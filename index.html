@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  DDF PROJECT PAGE TEMPLATE
+  M.A. Design for Digital Futures · Faculty of Design · TH Nürnberg Georg Simon Ohm
+
+  HOW TO USE
+  1. Replace every [BRACKETED] placeholder below with your content.
+  2. Put your images in ./images/ (see images/README.txt for format rules).
+  3. Videos: compressed MP4s in ./videos/ (max 50 MB each — see videos/README.txt).
+  4. Source code: one ZIP archive in ./code/ (under 100 MB — see code/README.txt).
+     The page links to this download, NOT to a repository.
+  5. Keep the section structure — it is part of the submission requirements.
+  Full instructions: README.md
+-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="[One-sentence description of your thesis project]">
+  <title>[Project Title] — M.A. Design for Digital Futures</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="card">
+    <p class="eyebrow">Master’s Thesis · Design for Digital Futures (M.A.)<br>
+      Faculty of Design · Technische Hochschule Nürnberg Georg Simon Ohm</p>
+
+    <h1>[Project Title: Clear, Specific, One or Two Lines]</h1>
+
+    <p class="authors">
+      <a href="[link to your portfolio or GitHub profile]">[Your Name]</a>
+    </p>
+    <p class="supervision">
+      Supervision: Prof. [Name] · Knowledge owner: [Name, Organisation] · [Year]
+    </p>
+
+    <!-- Hero / teaser image: your single strongest visual. Max 1920 px wide, ≤ 500 KB. -->
+    <figure>
+      <img src="images/teaser.jpg" alt="[Describe what the image shows — alt text is mandatory]">
+      <figcaption>[One-line caption for the teaser image]</figcaption>
+    </figure>
+
+    <p class="tagline"><em>[Optional: one memorable sentence that captures the spirit of the project.]</em></p>
+
+    <nav class="links" aria-label="Project links">
+      <a class="button" href="[link to thesis PDF — remove if not published]">Thesis (PDF)</a>
+      <a class="button" href="code/[lastname-project]-code.zip" download>Source code (ZIP)</a>
+      <a class="button" href="[link to demo video]">Video</a>
+      <!-- Add or remove buttons as needed -->
+    </nav>
+  </header>
+
+  <!-- ============ ABSTRACT ============ -->
+  <section class="card">
+    <h2>Abstract</h2>
+    <!-- 150–250 words. This is the four-sentence abstract from the concept seminar, expanded. -->
+    <p>[Your abstract. What is the problem, what did you do, how did you do it, what came out of it,
+    and why does it matter?]</p>
+  </section>
+
+  <!-- ============ RESEARCH QUESTION ============ -->
+  <section class="card">
+    <h2>Research Question</h2>
+    <!-- 1–2 sentences. The question or hypothesis your thesis answers. -->
+    <div class="research-question">
+      <p>[Your research question or hypothesis, stated in one or two precise sentences.]</p>
+    </div>
+  </section>
+
+  <!-- ============ APPROACH ============ -->
+  <section class="card">
+    <h2>Approach</h2>
+    <p>[How did you tackle the question? Method, process, tools, iterations. Keep it readable for a
+    general design/tech audience — the full detail lives in the thesis.]</p>
+
+    <figure>
+      <img src="images/approach.png" alt="[Describe the diagram]">
+      <figcaption>[Caption: e.g. system overview, process diagram]</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ RESULTS ============ -->
+  <section class="card">
+    <h2>Results</h2>
+    <p>[What came out of the project? Introduce the outcome/artefact, then show it.]</p>
+
+    <!-- VIDEO: hosted in this repository (faculty policy — no YouTube/external platforms).
+         Compress hard: MP4 (H.264 + AAC), 1080p, target <= 50 MB per file.
+         HARD LIMIT: every file in this repository must stay under 100 MB —
+         GitHub rejects larger files. Too big? Shorten it or compress harder;
+         the full-length master is handed in separately anyway.
+         Rules and ffmpeg recipe: videos/README.txt
+         Always set a poster image so the page stays fast. -->
+    <video class="video" controls preload="metadata" poster="images/video-poster.jpg">
+      <source src="videos/demo.mp4" type="video/mp4">
+      Your browser does not support HTML5 video —
+      <a href="videos/demo.mp4">download the video</a>.
+    </video>
+    <p class="caption">[Caption: demo video, max. 2 minutes]</p>
+
+    <!-- Image gallery: roughly 5–15 images across the whole page, each ≤ 500 KB. -->
+    <div class="gallery">
+      <figure>
+        <img src="images/result-1.jpg" alt="[Describe the image]">
+        <figcaption>[Caption]</figcaption>
+      </figure>
+      <figure>
+        <img src="images/result-2.jpg" alt="[Describe the image]">
+        <figcaption>[Caption]</figcaption>
+      </figure>
+      <figure>
+        <img src="images/result-3.jpg" alt="[Describe the image]">
+        <figcaption>[Caption]</figcaption>
+      </figure>
+      <figure>
+        <img src="images/result-4.jpg" alt="[Describe the image]">
+        <figcaption>[Caption]</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ SOURCE CODE ============ -->
+  <!-- The code is offered as a ZIP download hosted in this repository — do NOT
+       link to a repository. Put the archive in ./code/ (under 100 MB, no
+       secrets/API keys). Export instructions: code/README.txt -->
+  <section class="card">
+    <h2>Source Code</h2>
+    <p>The complete source code of this project is available as a
+      <a href="code/[lastname-project]-code.zip" download>ZIP download</a>.
+      The archive corresponds to the submission state
+      (tag <code>submission</code>, commit <code>[short hash]</code>).</p>
+  </section>
+
+  <!-- ============ LINKS & RESOURCES ============ -->
+  <section class="card">
+    <h2>Links &amp; Resources</h2>
+    <ul>
+      <li><a href="[URL]">[Related link: dataset, publication, tool, press…]</a></li>
+      <li><a href="[URL]">[Related link]</a></li>
+    </ul>
+  </section>
+
+  <!-- ============ ACKNOWLEDGEMENTS ============ -->
+  <section class="card">
+    <h2>Acknowledgements</h2>
+    <p>[Thank your supervisor, knowledge owner, participants, and everyone who helped.
+    If AI tools contributed to media on this page, say so here.]</p>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <p>© [Year] [Your Name] · M.A. Design for Digital Futures, Faculty of Design,
+      Technische Hochschule Nürnberg Georg Simon Ohm</p>
+    <p>Built with the <a href="https://github.com/Pixelkram/ddf-project-page-template">DDF project-page template</a> (MIT).
+      No cookies, no trackers.</p>
+    <!-- If German law requires an Impressum for your page, add a link to it here. -->
+  </footer>
+
+</body>
+</html>
